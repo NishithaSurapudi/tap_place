@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="//cdn.8thwall.com/web/aframe/8frame-0.8.2.min.js"></script>
     <title>Document</title>
+    <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
+    </script>
 </head>
 
 <body>
     <p>This is the written to check whether my heroku build is success or not</p>
     <a-scene>
-        <a-box position="1 0.5 2" rotation="0 20 30" width="2" height="1" color="#808080"></a-box>
-        <a-plane position="0 0 -4"  width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-box position="1 0.5 2" color="#808080"></a-box>
+        <a-plane position="0 0 -4" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-entity id="rig" position="25 10 0">
+            <a-camera id="camera"></a-camera>
+        </a-entity>
         <a-sky color="#ECECEC"></a-sky>
     </a-scene>
 </body>
