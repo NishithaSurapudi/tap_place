@@ -15,7 +15,9 @@
     <a-scene xrweb>
             <a-camera position="0 8 0">
             </a-camera>
-            <a-assets><img id = "texture" src = "./assets/texture.jpg"></a-assets>
+            <a-assets>
+                <a-asset-item id="candle" src="./assets/candle.fbx"></a-asset-item>
+                <img id = "texture" src = "./assets/flame.jpg"></a-assets>
             <a-box position="-1 1.6 -5" rotation = "0 0 0" animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true" src = "#texture" ></a-box>
     </a-scene>
 </body>
