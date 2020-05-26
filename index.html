@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//cdn.8thwall.com/web/aframe/8frame-0.8.2.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <title>Document</title>
-    <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
-    </script>
+    <!--  <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
+    </script>-->
 </head>
 
 <body>
@@ -16,9 +16,11 @@
         <a-camera position="0 8 0">
         </a-camera>
         <a-assets>
-            <a-asset-item id="castle" src="./assets/scene.gltf" ></a-asset-item>
+            <a-asset-item id="village" src="./assets/village.gltf"></a-asset-item>
+            <a-asset-item id="catapult" src="./assets/Catapult.gltf"></a-asset-item>
         </a-assets>
-        <a-entity gltf-model="#castle"></a-entity>
+        <a-entity gltf-model="#village"></a-entity>
+        <a-entity gltf-model="#catapult"></a-entity>
 
     </a-scene>
 </body>
