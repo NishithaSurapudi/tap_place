@@ -24,6 +24,7 @@
           newElement.setAttribute('position', touchPoint)
           newElement.setAttribute('visible', 'true')
           newElement.setAttribute('scale', '0.5 0.5 0.5')
+          newElement.setAttribute('id', 'CatapultID')
           newElement.setAttribute('gltf-model', '#Catapult')
           this.el.sceneEl.appendChild(newElement)
           newElement.addEventListener('model-loaded', () => {
