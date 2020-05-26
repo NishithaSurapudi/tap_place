@@ -21,7 +21,7 @@
           const touchPoint = event.detail.intersection.point
           newElement.setAttribute('position', touchPoint)
           newElement.setAttribute('visible', 'true')
-          newElement.setAttribute('scale', '0.0001 0.0001 0.0001')
+          newElement.setAttribute('scale', '0.5 0.5 0.5')
           newElement.setAttribute('gltf-model', '#Catapult')
           this.el.sceneEl.appendChild(newElement)
           newElement.addEventListener('model-loaded', () => {
@@ -43,7 +43,7 @@
     <a-scene xrweb tap-place>
         <a-asset-item id="Catapult" src="./assets/Catapult.gltf"></a-asset-item>
         </a-assets>
-        <a-entity gltf-model="#Catapult" scale="0.5 0.5 0.5">
+        <a-entity gltf-model="#Catapult" >
         </a-entity>
         <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
         </a-camera>
