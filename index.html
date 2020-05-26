@@ -14,13 +14,12 @@
     <a-scene xrweb>
         <a-camera position="0 25 50"></a-camera>
         <a-assets>
-            <a-asset-item id="village" src="./assets/village.gltf"></a-asset-item>-->
-            <a-asset-item id="catapult-o" src="./assets/Catapult.obj"></a-asset-item>
-            <a-asset-item id="catapult-m" src="./assets/Catapult.mtl"></a-asset-item>
+           <!-- <a-asset-item id="village" src="./assets/village.gltf"></a-asset-item>-->
+            <a-asset-item id="catapult-o" src="./assets/Catapult.gltf"></a-asset-item>
         </a-assets>
-        <entity gltf-model="#village">
-            </a-entity>
-            <a-entity obj-model="obj: #catapult-o; mtl: catapult-m" position="0 0 50" scale="0.01 0.01 0.01"></a-entity>
+        <!--<entity gltf-model="#village">
+            </a-entity>-->
+            <a-entity gltf-model="#catapult" position="0 0 50" scale="0.01 0.01 0.01"></a-entity>
     </a-scene>
 </body>
 
