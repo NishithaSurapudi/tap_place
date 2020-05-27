@@ -33,7 +33,7 @@
               easing: 'easeOutElastic',
               dur: 800,
               Property: 'rotation',
-              to:'0 360 0',
+              to:'45 360 45',
               loop:'true',
               duration:'10000'
             })
@@ -45,9 +45,10 @@
 
 <body>
     <a-scene xrweb tap-place >
-        <a-asset-item id="Catapult" src="./assets/Catapult.gltf"  ></a-asset-item>
+        <a-entity  animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+          <a-asset-item id="Catapult" src="./assets/Catapult.gltf"  ></a-asset-item>
         </a-assets>
-       <!-- <a-entity id = "#Catapult" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>-->
+        </a-entity>-->
         <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
         </a-camera>
         <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
