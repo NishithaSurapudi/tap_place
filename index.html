@@ -29,13 +29,7 @@
                         newElement.setAttribute('visible', 'true')
                         newElement.setAttribute('animation', {
                             property: 'scale',
-                            to: '0.5 0.5 0.5',
-                            property:' position',
-                            to:'0 0 0',
-                            Property: 'rotation',
-                            to: '0 360 0',
-                            loop: 'true',
-                            duration: '10000'
+                            to: '0.5 0.5 0.5'
                         })
                     })
                 })
@@ -47,9 +41,6 @@
         <a-scene xrweb tap-place>
             <a-asset-item id="Catapult" src="./assets/Catapult.gltf"></a-asset-item>
             </a-assets>
-            <a-entity>
-                <a-entity gltf-model="#Catapult" scale="0.5 0.5 0.5" position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
-            </a-entity>
             <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
             </a-camera>
             <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
