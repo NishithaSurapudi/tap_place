@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,8 @@
         <a-scene xrweb tap-place pinch-scale>
             <a-asset-item id="Catapult" src="./assets/Catapult.gltf"></a-asset-item>
             </a-assets>
+            <a-entity id="model" gltf-model="#Catapult" class="cantap"  hold-drag  two-finger-spin  pinch-scal scale="3 3 3" shadow="receive: false">
+          </a-entity>
             <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
             </a-camera>
             <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
@@ -25,5 +26,4 @@
         </a-scene>
         <script src="camera.js"></script>
     </body>
-
 </html>
