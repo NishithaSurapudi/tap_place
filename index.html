@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
     </script>
-    <script>
+    <!--<script>
         // Component that places model where the ground is clicked
         AFRAME.registerComponent('tap-place', {
             init: function() {
@@ -25,13 +25,13 @@
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
-                        // Once the model is loaded, we are ready to show it popping in using an animation
                         newElement.setAttribute('visible', 'true')
+
                     })
                 })
             }
         })
-    </script>
+    </script>-->
 
     <body>
         <a-scene xrweb tap-place>
@@ -45,6 +45,7 @@
             <a-entity id="ground" class="cantap" geometry="primitive: box" material="color: #ffffff; transparent: true; opacity: 0.0" scale="1000 2 1000" position="0 -1 0">
             </a-entity>
         </a-scene>
+        <script src="camera.js"></script>
     </body>
 
 </html>
