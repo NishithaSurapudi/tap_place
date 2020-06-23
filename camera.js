@@ -19,7 +19,7 @@
                         //console.log('hi');
                         newElement.setAttribute('animation', {
                             property: 'rotation',
-                            to: '90 45 45',
+                            to: '90 60 60',
                             //easing: 'easeOutElastic',
                             dur: 800,
                         })
