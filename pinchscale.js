@@ -1,9 +1,8 @@
 
-var clicked=false;
 AFRAME.registerComponent('pinch-scale', {
     schema: {
-      min: {default: 0.3},
-      max: {default: 8}
+      min: {default: 5},
+      max: {default: 50}
     },
     init: function() {
       this.initialScale = this.el.object3D.scale.clone()
@@ -17,9 +16,6 @@ AFRAME.registerComponent('pinch-scale', {
     handleEvent: function(event) {
       this.scaleFactor *= 1 + event.detail.spreadChange / event.detail.startSpread
       this.scaleFactor = Math.min(Math.max(this.scaleFactor, this.data.min), this.data.max)
-      if (clicked=true) {
-        gltfModel = document.getElementById('Catapult');
-    }
       this.el.object3D.scale.x = this.scaleFactor * this.initialScale.x
       this.el.object3D.scale.y = this.scaleFactor * this.initialScale.y
       this.el.object3D.scale.z = this.scaleFactor * this.initialScale.z
