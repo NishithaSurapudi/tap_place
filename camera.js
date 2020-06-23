@@ -20,7 +20,7 @@
                         newElement.setAttribute('animation', {
                             property: 'rotation',
                             to: '45 45 45',
-                            easing: 'easeOutElastic',
+                            //easing: 'easeOutElastic',
                             dur: 800,
                         })
                         
