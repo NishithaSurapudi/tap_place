@@ -1,4 +1,6 @@
         // Component that places model where the ground is clicked
+        var arCamera = document.getElementById('aCamera');
+
         AFRAME.registerComponent('tap-place', {
             init: function() {
                 const ground = document.getElementById('ground')
