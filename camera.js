@@ -17,7 +17,7 @@
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
                         newElement.setAttribute('animation',{
-                            property : rotation,
+                            property : "rotation",
                             to : "30 90 30"
                         })
                         
