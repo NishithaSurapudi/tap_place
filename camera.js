@@ -1,4 +1,4 @@
-    //var clicked = false;
+    var clicked = false;
         // Component that places model where the ground is clicked
         AFRAME.registerComponent('tap-place', {
             init: function() {
@@ -42,7 +42,7 @@
                 this.scaleFactor *= 1 + event.detail.spreadChange / event.detail.startSpread;
                 this.scaleFactor = Math.min(Math.max(this.scaleFactor, this.data.min), this.data.max);
                 var gltfModel;
-                if (clicked) {
+                if (clicked=true) {
                     gltfModel = document.getElementById('Catapult');}
         
                 gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
