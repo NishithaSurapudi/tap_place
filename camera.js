@@ -1,3 +1,4 @@
+    var clicked = false;
         // Component that places model where the ground is clicked
         AFRAME.registerComponent('tap-place', {
             init: function() {
