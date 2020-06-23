@@ -1,5 +1,5 @@
 // Component that detects and emits events for touch gestures
-AFRAME.registerComponent('gesture-detector', {
+/*AFRAME.registerComponent('gesture-detector', {
     schema: {
       element: { default: '' },
     },
@@ -117,5 +117,5 @@ AFRAME.registerComponent('gesture-detector', {
       const numberNames = ['one', 'two', 'three', 'many']
       return numberNames[Math.min(touchCount, 4) - 1]
     }
-  })
+  })*/
   
