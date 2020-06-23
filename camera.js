@@ -17,9 +17,11 @@
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
                         console.log('hi');
-                        newElement.setAttribute('animation',{
-                            property : "rotation",
-                            to : "30 90 30"
+                        newElement.setAttribute('animation', {
+                            property: 'rotation',
+                            to: '45 45 45',
+                            easing: 'easeOutElastic',
+                            dur: 800,
                         })
                         
                     })
