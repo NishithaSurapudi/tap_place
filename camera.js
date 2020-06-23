@@ -16,7 +16,7 @@
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
-                        console.log('hi');
+                        //console.log('hi');
                         newElement.setAttribute('animation', {
                             property: 'rotation',
                             to: '45 45 45',
