@@ -11,6 +11,7 @@
                     newElement.setAttribute('position', touchPoint)
                     newElement.setAttribute('visible', 'false')
                     newElement.setAttribute('scale', '0.5 0.5 0.5')
+                    newElement.setAttribute('rotation', arCamera.components.rotation);
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
