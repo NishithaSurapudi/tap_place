@@ -12,7 +12,7 @@
                     //const randomYRotation = Math.random() * 360
                     //newElement.setAttribute('rotation', '0 ' + randomYRotation + ' 0')
                     newElement.setAttribute('visible', 'false')
-                    //newElement.setAttribute('scale', '0.4 0.4 0.4')
+                    newElement.setAttribute('scale', '0.3 0.3 0.3')
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
