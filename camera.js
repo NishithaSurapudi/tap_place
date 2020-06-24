@@ -9,21 +9,23 @@
                     // The raycaster gives a location of the touch in the scene
                     const touchPoint = event.detail.intersection.point
                     newElement.setAttribute('position', touchPoint)
+                    const randomYRotation = Math.random() * 360
+                    newElement.setAttribute('rotation', '0 ' + randomYRotation + ' 0')
                     newElement.setAttribute('visible', 'false')
-                    //newElement.setAttribute('scale', '0.5 0.5 0.5')
+                    newElement.setAttribute('scale', '0.05 0.05 0.05')
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
                        newElement.setAttribute('animation', {
-                            property: 'position',
+                            //property: 'position',
                             //from:'0 0 0',
-                            to: '20 20 20',
-                            property:'rotation',
-                            to:'45 45 45',
+                            //to: '20 20 20',
+                          //  property:'rotation',
+                           // to:'45 45 45',
                             property: 'scale',
-                            to: '1 1 1',
+                            to: '0.5 0.5 0.5',
                             easing: 'easeOutElastic',
                             dur: 2800,
                         })
