@@ -17,9 +17,9 @@
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
                        newElement.setAttribute('animation', {
-                            //property: 'rotation',
+                            property: 'position',
                             //from:'0 0 0',
-                            //to: '90 60 60',
+                            to: '20 20 20',
                             //easing: 'easeOutElastic',
                             //dur: 800,
                             property: 'scale',
