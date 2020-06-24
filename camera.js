@@ -23,6 +23,11 @@
                             to: '90 60 60',
                             //easing: 'easeOutElastic',
                             dur: 800,
+                            property: 'scale',
+                            to: '7 7 7',
+                            easing: 'easeOutElastic',
+                            dur: 800,
+
                         })
                         
                     })
