@@ -17,13 +17,13 @@
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
                        newElement.setAttribute('animation', {
-                            property: 'rotation',
-                            from:'0 0 0',
-                            to: '90 60 60',
+                            //property: 'rotation',
+                            //from:'0 0 0',
+                            //to: '90 60 60',
                             //easing: 'easeOutElastic',
                             //dur: 800,
                             property: 'scale',
-                            to: '7 7 7',
+                            to: '4 4 4',
                             easing: 'easeOutElastic',
                             dur: 1800,
                         })
