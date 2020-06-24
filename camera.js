@@ -18,7 +18,7 @@
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
-                       newElement.setAttribute('animation', {
+                       /*newElement.setAttribute('animation', {
                            // property: 'position',
                             //to: '20 20 20',
                           //property:'rotation',
@@ -27,7 +27,7 @@
                             to: '0.5 0.5 0.5',
                             easing: 'easeOutElastic',
                             dur: 2800,
-                        })
+                        })*/
                     })
                 })
             }
