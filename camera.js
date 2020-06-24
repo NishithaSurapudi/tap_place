@@ -10,23 +10,23 @@
                     const touchPoint = event.detail.intersection.point
                     newElement.setAttribute('position', touchPoint)
                     newElement.setAttribute('visible', 'false')
-                    newElement.setAttribute('scale', '0.7 0.7 0.7')
+                    //newElement.setAttribute('scale', '0.7 0.7 0.7')
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
-                       /* newElement.setAttribute('animation', {
+                       newElement.setAttribute('animation', {
                             property: 'rotation',
                             from:'0 0 0',
                             to: '90 60 60',
                             //easing: 'easeOutElastic',
-                            dur: 800,
+                            //dur: 800,
                             property: 'scale',
-                            to: '10 10 10',
+                            to: '7 7 7',
                             easing: 'easeOutElastic',
-                            dur: 800,
-                        })*/
+                            dur: 1800,
+                        })
                     })
                 })
             }
