@@ -16,8 +16,7 @@
         <a-scene xrweb tap-place  pinch-scale >
             <a-asset-item id="Catapult" src="./assets/Catapult.gltf"></a-asset-item>
             <a-entity gltf-model="#Catapult" class="cantap"  pinch-scale scale="0.025 0.025 0.025"></a-entity>
-        </a-entity>
-            <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
+                <a-camera position="0 8 0" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
             </a-camera>
             <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
             </a-entity>
