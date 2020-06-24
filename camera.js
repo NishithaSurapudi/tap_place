@@ -23,7 +23,7 @@
                             //easing: 'easeOutElastic',
                             //dur: 800,
                             property: 'scale',
-                            to: '4 4 4',
+                            to: '1 1 1',
                             easing: 'easeOutElastic',
                             dur: 1800,
                         })
