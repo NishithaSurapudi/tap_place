@@ -10,7 +10,7 @@
                     const touchPoint = event.detail.intersection.point
                     newElement.setAttribute('position', touchPoint)
                     newElement.setAttribute('visible', 'false')
-                    //newElement.setAttribute('scale', '0.7 0.7 0.7')
+                    //newElement.setAttribute('scale', '0.5 0.5 0.5')
                     newElement.setAttribute('gltf-model', '#Catapult')
                     this.el.sceneEl.appendChild(newElement)
                     newElement.addEventListener('model-loaded', () => {
@@ -23,7 +23,7 @@
                             property:'rotation',
                             to:'45 45 45',
                             property: 'scale',
-                            to: '0.5 0.5 0.5',
+                            to: '1 1 1',
                             easing: 'easeOutElastic',
                             dur: 2800,
                         })
