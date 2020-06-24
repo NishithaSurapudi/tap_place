@@ -19,7 +19,5 @@ AFRAME.registerComponent('pinch-scale', {
     this.el.object3D.scale.x = this.scaleFactor * this.initialScale.x
     this.el.object3D.scale.y = this.scaleFactor * this.initialScale.y
     this.el.object3D.scale.z = this.scaleFactor * this.initialScale.z
-    console.log(this.el.object3D.scale);
-
   }
 })
