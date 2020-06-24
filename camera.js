@@ -23,9 +23,9 @@
                             //easing: 'easeOutElastic',
                             //dur: 800,
                             property: 'scale',
-                            to: '1 1 1',
+                            to: '0.5 0.5 0.5',
                             easing: 'easeOutElastic',
-                            dur: 1800,
+                            dur: 2800,
                         })
                     })
                 })
