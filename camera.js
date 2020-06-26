@@ -23,10 +23,10 @@
                             to: '0.6 0.6 0.6',
                             easing: 'easeOutElastic',
                             dur: 800,
-                           /* property:'rotation',
+                            property:'rotation',
                             to:'0 360 0',
                             loop:'true',
-                            dur:'1900'*/
+                            dur:'1900'
                           })
                     })
                 })
