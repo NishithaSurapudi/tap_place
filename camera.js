@@ -19,14 +19,14 @@
                         newElement.setAttribute('visible', 'true')
                         //console.log('hi');
                         newElement.setAttribute('animation', {
-                            property: 'scale',
-                            to: '0.6 0.6 0.6',
-                            easing: 'easeOutElastic',
-                            dur: 800,
+                           // property: 'scale',
+                            //to: '0.6 0.6 0.6',
+                            //easing: 'easeOutElastic',
+                           // dur: 800,
                             property:'rotation',
                             to:'0 360 0',
                             loop:'true',
-                            dur:'1900'
+                            dur:'29000'
                           })
                     })
                 })
