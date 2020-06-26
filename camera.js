@@ -24,8 +24,8 @@
                             easing: 'easeOutElastic',
                            dur: 800,
                             property:'rotation',
-                            from:'alternate',
-                            to:'reverse',
+                           from:'0 0 0',
+                            to:'45 45 45',
                             loop:'true',
                          dur:'29000'
                           })
