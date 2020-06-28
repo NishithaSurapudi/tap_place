@@ -22,12 +22,11 @@
                           /*property: 'scale',
                             to: '0.6 0.6 0.6',
                             easing: 'easeOutElastic',
-                           dur: 800,*/
+                           dur: 800,
                             property:'rotation',
-                           from:'0 0 0',
                             to:'45 45 45',
                             loop:'true',
-                         dur:'29000'
+                         dur:'29000'*/
                           })
                     })
                 })
