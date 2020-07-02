@@ -17,7 +17,7 @@
 </head>
    
     <body>
-        <a-scene xrweb   tap-place gesture-detector pinch-scale two-finger-spin >
+        <a-scene xrweb gesture-detector pinch-scale two-finger-spin >
             <a-entity position="10 20 30">
             <a-asset-item id="Catapult" src="./assets/Catapult.gltf"></a-asset-item></a-entity>
             <a-camera position="0 8 0" id="aCamera" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
@@ -25,7 +25,7 @@
             <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
             </a-entity>
             <!-- Adding the cantap class allows the ground to be clicked -->
-            <a-entity gltf-model="#Catapult" class="cantap"  hold-drag two-finger-spin pinch-scale scale="0.3 0.3 0.3" ></a-entity>
+            <a-entity  class="cantap"  two-finger-spin pinch-scale scale="0.3 0.3 0.3" ></a-entity>
         </a-entity>
             <a-entity id="ground" class="cantap" geometry="primitive: box" material="color: #ffffff; transparent: true; opacity: 0.0" scale="1000 2 1000" position="0 -1 0">
             </a-entity>
