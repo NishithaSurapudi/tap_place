@@ -9,6 +9,7 @@
     <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
     </script>
     <script src="./js/pinch-scale.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
     <script src="./js/gesture-detector.js"></script>
     <script src="./js/two-finger-spin.js"></script>
     <script src="./js/camera.js"></script>
@@ -17,7 +18,7 @@
    
     <body>
         <a-scene xrweb  tap-place gesture-detector pinch-scale two-finger-spin >
-            <a-entity  gltf-model="#Scene" class="cantap"  two-finger-spin pinch-scale scale="0.3 0.3 0.3" position="20 20 20" ></a-entity>
+            <a-entity  gltf-model="#Scene" class="cantap"    animation-mixer two-finger-spin pinch-scale scale="0.3 0.3 0.3" position="20 20 20" ></a-entity>
             <a-asset-item id="Scene" src="./assets/modell.gltf"></a-asset-item></a-entity>
             <a-camera position="0 8 0" id="aCamera" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
             </a-camera>
