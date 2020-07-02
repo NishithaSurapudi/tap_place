@@ -5,11 +5,9 @@ AFRAME.registerComponent('two-finger-spin', {
     init: function() {
       this.handleEvent = this.handleEvent.bind(this)
       this.el.sceneEl.addEventListener('twofingermove', this.handleEvent)
-      this.el.sceneEl.addEventListener('onefingermove', this.handleEvent)
     },
     remove: function() {
       this.el.sceneEl.removeEventListener('twofingermove', this.handleEvent)
-      this.el.sceneEl.removeEventListener('onefingermove', this.handleEvent)
 
     },
     handleEvent: function(event) {
