@@ -3,48 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
     <script src="//cdn.8thwall.com/web/aframe/8frame-0.8.2.min.js"></script>
     <script src="//cdn.8thwall.com/web/aframe/aframe-animation-component-5.1.2.min.js"></script>
     <title>Document</title>
     <script src="//apps.8thwall.com/xrweb?appKey=sLpsgZaNAKdePFfBPLijpi2xiCV4wzmLVAutdWhkugaRqwZB09CQhHdxbpTJoCvbaDCdM">
     </script>
-        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
-
     <script src="./js/pinch-scale.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
     <script src="./js/gesture-detector.js"></script>
     <script src="./js/two-finger-spin.js"></script>
     <script src="./js/camera.js"></script>
-    <script>
-        AFRAME.registerComponent('next-button', {
-          init: function() {
-
-            const animationList = ["idle", "walk", "run"]
-
-            const model = document.getElementById('model')
-            const nextButton = document.getElementById('nextbutton')
-
-            let idx = 1 // Start with the 2nd animation because the model starts with idle animation
-            const nextAnimation = () => {
-              model.setAttribute('animation-mixer', {
-                clip: animationList[idx],
-                loop: 'repeat',
-              })
-              idx = (idx + 1) % animationList.length
-            }
-
-            nextButton.onclick = nextAnimation // Switch to the next animation when the button is pressed.
-          }
-        })
-    </script>
 
 </head>
    
     <body>
-        <div class="nextbutton" id="nextbutton">Next</div>
-        <a-scene xrweb  next-button tap-place gesture-detector pinch-scale two-finger-spin >
-            <a-entity id="model" gltf-model="#Scene" class="cantap" scale="1 1 1" animation-mixer="clip: idle; loop: repeat" hold-drag two-finger-spin pinch-scale></a-entity>
-                <a-asset-item id="Scene" src="./assets/model.gltf"></a-asset-item>
+        <a-scene xrweb  tap-place gesture-detector pinch-scale two-finger-spin >
+            <a-entity id="model" gltf-model="#Scene" class="cantap" scale="3 3 3" animation-mixer="clip: idle; loop: repeat" hold-drag two-finger-spin pinch-scale>
+                <a-asset-item id="Scene" src="./assets/model.gltf"></a-asset-item></a-entity>
             <a-camera position="0 8 0" id="aCamera" raycaster="objects: .cantap" cursor=" fuse: false;rayOrigin: mouse;" light="intensity:1" id="aCamera">
             </a-camera>
             <a-entity light="type:hemisphere;" position="1 1 0.0001" id="ar-light">
