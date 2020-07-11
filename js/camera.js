@@ -13,7 +13,7 @@ AFRAME.registerComponent('tap-place', {
                 newElement.setAttribute('position', touchPoint)
                 newElement.setAttribute('visible', 'false')
                 newElement.setAttribute('scale', '0.3 0.3 0.3')
-                newElement.setAttribute('id', 'MOdelID')
+                newElement.setAttribute('id', 'ModelID')
                 newElement.setAttribute('gltf-model', '#Catapult')
                 this.el.sceneEl.appendChild(newElement)
                 newElement.addEventListener('model-loaded', () => {
