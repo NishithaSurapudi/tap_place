@@ -1,4 +1,14 @@
-
+.content-container{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+    background: transparent;
+}
 div.container AR {
     text-align: center;
     padding: 0;
