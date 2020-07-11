@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/container AR.css">
     <script src="//cdn.8thwall.com/web/aframe/8frame-0.8.2.min.js"></script>
     <script src="//cdn.8thwall.com/web/aframe/aframe-animation-component-5.1.2.min.js"></script>
     <title>Document</title>
@@ -28,5 +31,36 @@
             <a-entity id="ground" class="cantap" geometry="primitive: box" material="color: #ffffff; transparent: true; opacity: 0.0" scale="1000 2 1000" position="0 -1 0">
             </a-entity>
         </a-scene>
+
+        <div class="cvs-content-container" id="homePage">
+            <p class="content-heading">
+                This is my first AR Demo
+            </p>
+
+            <div class="container AR">
+                <div class="row content-point">
+                    <p class="col-2 content-bullet-icon">
+                        <img src="../assets/bullet_arrow.png">
+                    </p>
+                    <p class="col-8 text">We have used 8th wall library to present AR</p>
+                </div>
+                <div class="row content-point">
+                    <p class="col-2 content-bullet-icon">
+                        <img src="../assets/bullet_arrow.png">
+                    </p>
+                    <p class="col-8 text">In this demo the user will be able to place a 3D animated model 
+                        and can perform zoom in and zoom out operations on it.</p>
+                </div>
+                <div class="row content-point">
+                    <p class="col-2 content-bullet-icon">
+                        <img src="../assets/bullet_arrow.png">
+                    </p>
+                    <p class="col-8 text">Have a nice experience!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     </body>
 </html>
