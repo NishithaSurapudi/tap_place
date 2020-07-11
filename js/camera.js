@@ -3,9 +3,10 @@ var isplaced = false;
 AFRAME.registerComponent('tap-place', {
     init: function () {
         const ground = document.getElementById('ground')
-        if (!isplaced) {
-            ispalced = true;
-            ground.addEventListener('click', event => {
+
+        ground.addEventListener('click', event => {
+            if (!isplaced) {
+                ispalced = true;
                 // Create new entity for the new object
                 const newElement = document.createElement('a-entity')
                 const touchPoint = event.detail.intersection.point
@@ -18,8 +19,9 @@ AFRAME.registerComponent('tap-place', {
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
                 })
-            })
-        }
+            }
+        })
+
     }
 })
 
