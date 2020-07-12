@@ -1,5 +1,5 @@
 
-/*div.content-container{
+div.content-container{
     text-align: center;
     padding: 0;
     margin: 0;
@@ -9,7 +9,7 @@
     height: 100%;
     top: 0;
     background: transparent;
-}*/
+}
 div.content-container p.content-heading{
     text-align: center;
     font-weight:bold;
