@@ -16,7 +16,7 @@ AFRAME.registerComponent('tap-place', {
                 newElement.setAttribute('id', 'modelID1')
                 newElement.setAttribute('gltf-model', '#Catapult')
                 //const xrweb = document.getElementsByTagName('a-scene')
-                //console.log(document.getElementsByTagName('a-scene')[0].attributes)
+                console.log(document.getElementsByTagName('a-scene')[0].attributes)
                 this.el.sceneEl.appendChild(newElement)
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
