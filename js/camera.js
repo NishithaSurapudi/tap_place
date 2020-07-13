@@ -52,27 +52,27 @@ AFRAME.registerComponent('pinch-scale', {
         if (isplaced) {
             gltfModel = document.getElementById('modelID1');
         }
-        if (gltfModel.object3D.scale.x < 2) {
+        if (gltfModel.object3D.scale.x < 1.5) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
-        if (gltfModel.object3D.scale.y < 2) {
+        if (gltfModel.object3D.scale.y < 1.5) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
 
-        if (gltfModel.object3D.scale.z < 2) {
+        if (gltfModel.object3D.scale.z < 1.5) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
        else
          {
-            gltfModel.object3D.scale.x = this.data.min * 2;
-            gltfModel.object3D.scale.y = this.data.min * 2;
-            gltfModel.object3D.scale.z = this.data.min * 2;       
+            gltfModel.object3D.scale.x = this.data.min * this.data.min *this.data.min ;
+            gltfModel.object3D.scale.y = this.data.min * this.data.min *this.data.min ;
+            gltfModel.object3D.scale.z = this.data.min * this.data.min *this.data.min ;       
          }
     }
 });
