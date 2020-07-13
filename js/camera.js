@@ -30,7 +30,7 @@ AFRAME.registerComponent('tap-place', {
 
 AFRAME.registerComponent('pinch-scale', {
     schema: {
-        min: { default: 0.3 },
+        min: { default: 0.5 },
         max: { default: 1 }
     },
 
