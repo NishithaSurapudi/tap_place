@@ -1,11 +1,11 @@
 
-div.wrapper p.wrapper-heading{
+.wrapper p.wrapper-heading{
     text-align: center;
-    font: Bold 20px/24px Helvetica;
+    font: Bold 20px Helvetica;
     letter-spacing: 0;
-    color: #CC0000;
-    opacity: 1; 
+    color: #ffffff;
 }
+
 
 
 
