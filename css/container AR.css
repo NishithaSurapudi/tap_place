@@ -1,9 +1,10 @@
 
-.wrapper p.wrapper-heading{
+.wrapper .wrapper-heading{
     text-align: center;
     font: Bold 20px Helvetica;
     letter-spacing: 0;
     color: #ffffff;
+    background: transparent;
 }
 
 
