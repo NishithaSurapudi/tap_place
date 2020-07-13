@@ -1,5 +1,22 @@
+.wrapper{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: transparent; 
+}
+div.wrapper p{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: transparent; 
+}
 
-div.content-container{
+
+
+
+
+
+/*div.content-container{
     text-align: center;
     padding: 0;
     margin: 0;
