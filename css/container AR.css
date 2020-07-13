@@ -1,8 +1,10 @@
 .wrapper{
-    width: 100%;
+    width: 200;
     height: 100%;
 }
  .wrapper-heading{
+     height: 200px;
+     width:200px;
     text-align: center;
     font: Bold 20px Helvetica;
     letter-spacing: 0;
