@@ -1,5 +1,8 @@
-
-.wrapper .p.wrapper-heading{
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+ .p.wrapper-heading{
     text-align: center;
     font: Bold 20px Helvetica;
     letter-spacing: 0;
