@@ -21,19 +21,20 @@ AFRAME.registerComponent('tap-place', {
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
                 });
+                start = newElement;
+                start();
             }
         })
     }
 });
 
 
-$(function(){
+start = (function(){
     $("#first").click(function(){
-        $("#start").fadeOut(7000)
+   $("#start").fadeOut(6000)
     });
-})
-
-/*the component for scaling the 3d model*/
+});
+//the component for scaling the 3d model
 
 AFRAME.registerComponent('pinch-scale', {
     schema: {
