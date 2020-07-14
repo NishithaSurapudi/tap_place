@@ -31,6 +31,7 @@ $(function(){
     $("#first").click(function(){
    $("#start").fadeOut(6000)
     });
+    $("#Catapult").show();
 });
 //the component for scaling the 3d model
 
