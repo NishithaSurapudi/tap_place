@@ -1,3 +1,12 @@
+div.cvs-content-container p.cvs-content-heading {
+    text-align: center;
+    font: Bold 20px/24px Helvetica;
+    letter-spacing: 0;
+    color: #CC0000;
+    opacity: 1;
+}
+
+
 div.container-AR p.c {
     text-align: center;
     font: Bold 20px/24px Helvetica;
