@@ -2,6 +2,7 @@
     width:100%;
     height: 100%;
     background: transparent;
+    margin-top: -300px;
 }
 .content-wrapper ul.content-one.li{
     font-size: 18px;
@@ -10,5 +11,5 @@
     height:200px;
     color:#333333;
     background:#ffffff;
-
+margin-top: -300px;
 }
