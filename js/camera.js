@@ -27,12 +27,10 @@ AFRAME.registerComponent('tap-place', {
 });
 
 
-$(function(){
-    $("#first").click(function(){
-   $("#start").fadeOut(6000)
-    });
+start = (selector) => {
+   $(selector).fadeOut(6000)
     $("#Catapult").show();
-});
+}
 //the component for scaling the 3d model
 
 AFRAME.registerComponent('pinch-scale', {
