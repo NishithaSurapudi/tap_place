@@ -21,17 +21,17 @@ AFRAME.registerComponent('tap-place', {
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
                 });
-               
             }
         })
     }
 });
 
 
-start = (function(){
+$(function(){
     $("#first").click(function(){
    $("#start").fadeOut(6000)
     });
+    
 });
 //the component for scaling the 3d model
 
