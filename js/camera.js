@@ -28,10 +28,9 @@ AFRAME.registerComponent('tap-place', {
 
 
 $(function(){
-    $("#first").click(function(){
+    $(selector).click(function(){
    $("#start").fadeOut(6000)
     });
-    
 });
 //the component for scaling the 3d model
 
