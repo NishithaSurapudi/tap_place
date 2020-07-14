@@ -21,8 +21,7 @@ AFRAME.registerComponent('tap-place', {
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
                 });
-                start = newElement;
-                start();
+               
             }
         })
     }
