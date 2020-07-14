@@ -26,6 +26,10 @@ AFRAME.registerComponent('tap-place', {
     }
 });
 
+
+start = (selector) => {
+    $(selector).fadeout(6000);
+}
 //the component for scaling the 3d model
 
 AFRAME.registerComponent('pinch-scale', {

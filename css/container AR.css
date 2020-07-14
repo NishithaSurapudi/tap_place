@@ -12,10 +12,11 @@
 ul.content-one li {
     text-align: left;
     font: 18px/22px Helvetica;
+    font-weight: bold;
     letter-spacing: 0;
     color: #000000;
     opacity: 0.8;
     background: #FFFFFF;
-    margin: 5px;
+    margin-top : 5px;
     border-radius: 5px;
 }
