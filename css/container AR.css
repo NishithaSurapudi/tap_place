@@ -9,14 +9,6 @@
     background: transparent;
 }
 
-div.content-wrapper p.content-heading {
-    text-align: center;
-    font: Bold 20px/24px Helvetica;
-    letter-spacing: 0;
-    color: #CC0000;
-    opacity: 1;
-}
-
 ul.content-one li {
     text-align: left;
     font: 18px/22px Helvetica;
