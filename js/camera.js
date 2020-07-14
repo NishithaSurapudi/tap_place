@@ -28,7 +28,7 @@ AFRAME.registerComponent('tap-place', {
 
 
 $(function(){
-    $(selector).click(function(){
+    $("#start").click(function(){
    $("#start").fadeOut(6000)
     });
 });
