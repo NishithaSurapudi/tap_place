@@ -3,10 +3,6 @@
     height: 100%;
     margin-top: -600px;
     margin-left:45px;
-    display: block ;
-}
-a-scene {
-    display: inline;
 }
 .content-wrapper ul.content-one.li{
     margin-top: -550px;
@@ -25,13 +21,16 @@ a-scene {
     opacity:0.8;
     text-align: left;
 }
-
- .wrapper-placeholder {
+#footer{
+        z-index: 999;
+        position: fixed;
+}
+#footer .wrapper-placeholder {
     font-weight: bold;
     font-size: 18px;
-    color: rgb(12, 13, 14);
+    color: aliceblue;
 }
-.content-wrapper #zoom{
+#zoom{
     height: 20%;
     width: 15%;
 }
