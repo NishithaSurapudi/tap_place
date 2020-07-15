@@ -21,11 +21,8 @@
     opacity:0.8;
     text-align: left;
 }
-#footer{
-        z-index: 999;
-        position: fixed;
-}
-#footer .wrapper-placeholder {
+
+ .wrapper-placeholder {
     font-weight: bold;
     font-size: 18px;
     color: aliceblue;
