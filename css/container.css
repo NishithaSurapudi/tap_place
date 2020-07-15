@@ -26,6 +26,7 @@
         position: fixed;
 }
 #footer .wrapper-placeholder {
+    margin-bottom: 90px;
     font-weight: bold;
     font-size: 18px;
     color: aliceblue;
