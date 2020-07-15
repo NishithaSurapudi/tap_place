@@ -30,14 +30,8 @@ AFRAME.registerComponent('tap-place', {
 $(function () {
     $("#ground").click(function () {
         $("#start").fadeOut(6000)
-    });
-    setTimeout(() => {
-        $("#zoom").fadeIn(1000);
-        $("#placeholder").fadeIn("fast");
-    }, 1000);
-    $("ground").click(function(){
-        $("#zoom").fadeOut(1000);
-        $("#placeholder").fadeOut("fast");    
+        $(".pinchclass").fadeIn(fast);
+        $("#placeholder").fadeIn("fast"); 
     });
 });
 
