@@ -27,12 +27,9 @@ a-scene {
     color:#000000;
     width:300px;
     height:50px;
-    border:1px solid black;
     border-radius: 5px;
     padding :6px;
-    text-align: center;
-    margin: 5px;
-    background:#ffffff;
-    opacity:2;
-    background:transparent;
+    background: #a3a1a1;
+    opacity:0.8;
+    text-align: left;
 }
