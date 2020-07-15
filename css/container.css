@@ -1,11 +1,8 @@
 .wrapper{
     width:100%;
     height: 100%;
-    background: transparent;
     margin-top: -600px;
     text-align:center;
-
-
 }
 .content-wrapper ul.content-one.li{
     margin-top: -550px;
@@ -14,7 +11,6 @@
     letter-spacing: 0;
     color: #f81111;
     opacity: 0.8;
-    background: #FFFFFF;
     margin: 5px;
     border-radius: 5px;
     padding: 8px;
@@ -24,11 +20,4 @@ a-scene {
 }
 .cvs-content-div{
     text-align: center;
-}
-.row-content-one p{
-    width:200px;
-    height:70px;
-    border:1px solid black;
-    background:#000000;
-    color:white; 
 }
