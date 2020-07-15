@@ -5,16 +5,23 @@
     margin-top: -600px;
     text-align:center;
 
+
 }
 .content-wrapper ul.content-one.li{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    width:300px;
-    height:200px;
-    color:#f50606;
-    margin-top: -600px;
-    font-weight: bold;
-    padding:10px;
-    margin:5px;
-    
+    margin-top: -550px;
+    text-align: left;
+    font: 18px/22px Helvetica;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 0.8;
+    background: #FFFFFF;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 8px;
+}
+a-scene {
+    display: inline;
+}
+.cvs-content-div{
+    text-align: center;
 }
