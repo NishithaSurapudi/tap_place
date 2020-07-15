@@ -3,6 +3,7 @@
     height: 100%;
     margin-top: -600px;
     margin-left:45px;
+    display: none;
 }
 .content-wrapper ul.content-one.li{
     margin-top: -550px;
