@@ -16,8 +16,7 @@
     </script>
     <script defer src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
     <script src="./js/gesture-detector.js"></script>
-
-
+    <script src="./js/camera.js"></script>
 </head>
 
 <body>
@@ -48,13 +47,14 @@
                 <p class="col-8 text">TAP ON THE SCREEN TO PLACE 3D MODEL</p>
             </div>
         </div>
+
+        <foooter id="footer" class="pinchclass">
+            <img src="./assets/pinch.png" id="zoom" />
+            <p id="placeholder" class="wrapper-placeholder">
+                Use your two fingers to zoom and rotate.
+            </p>
+        </foooter>
     </div>
-<foooter id = "footer" class = "pinchclass">
-    <img src="./assets/pinch.png" id="zoom" />
-    <p id="placeholder" class="wrapper-placeholder">
-        Use your two fingers to zoom and rotate.
-    </p>
-</foooter>
     <!-- The core Firebase JS SDK is always required and must be listed first 
 <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 
@@ -78,7 +78,6 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>-->
-    <script src="./js/camera.js"></script>
 
 </body>
 
