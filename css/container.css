@@ -26,7 +26,6 @@
         position: fixed;
 }
 #footer .wrapper-placeholder {
-    margin-bottom: 90px;
     font-weight: bold;
     font-size: 18px;
     color: aliceblue;
@@ -34,4 +33,7 @@
 #zoom{
     height: 20%;
     width: 15%;
+}
+.pinchclass p{
+    margin-bottom: 90px;
 }
