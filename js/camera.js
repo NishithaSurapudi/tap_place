@@ -27,12 +27,36 @@ AFRAME.registerComponent('tap-place', {
 });
 
 
-$(function(){
-    $("#ground").click(function(){
-   $("#start").fadeOut(6000)
+$(function () {
+    $("#ground").click(function () {
+        $("#start").fadeOut(6000)
     });
 });
-//the component for scaling the 3d model
+
+/*this component allows to rotate the model*/
+
+AFRAME.registerComponent('two-finger-spin', {
+    schema: {
+        factor: { default: 5 }
+    },
+    init: function () {
+        this.handleEvent = this.handleEvent.bind(this)
+        this.el.sceneEl.addEventListener('twofingermove', this.handleEvent)
+    },
+    remove: function () {
+        this.el.sceneEl.removeEventListener('twofingermove', this.handleEvent)
+
+    },
+    handleEvent: function (event) {
+        var gltfModel;
+        if (isplaced) {
+            gltfModel = document.getElementById('modelID1');
+        }
+        gltfModel.object3D.rotation.y += event.detail.positionChange.x * this.data.factor
+    }
+})
+
+/*the component for scaling the 3d model*/
 
 AFRAME.registerComponent('pinch-scale', {
     schema: {
@@ -58,27 +82,26 @@ AFRAME.registerComponent('pinch-scale', {
         if (isplaced) {
             gltfModel = document.getElementById('modelID1');
         }
-        if (gltfModel.object3D.scale.x <=1) {
+        if (gltfModel.object3D.scale.x <= 1) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
-        if (gltfModel.object3D.scale.y <=1) {
+        if (gltfModel.object3D.scale.y <= 1) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
 
-        if (gltfModel.object3D.scale.z <=1) {
+        if (gltfModel.object3D.scale.z <= 1) {
             gltfModel.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             gltfModel.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             gltfModel.object3D.scale.z = this.scaleFactor * this.initialScale.z;
         }
-       else
-         {
-            gltfModel.object3D.scale.x = this.data.min *2 ;
-            gltfModel.object3D.scale.y = this.data.min * 2 ;
-            gltfModel.object3D.scale.z = this.data.min * 2 ;       
-         }
+        else {
+            gltfModel.object3D.scale.x = this.data.min * 2;
+            gltfModel.object3D.scale.y = this.data.min * 2;
+            gltfModel.object3D.scale.z = this.data.min * 2;
+        }
     }
 });
