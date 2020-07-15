@@ -34,4 +34,5 @@ a-scene {
     margin: 5px;
     background:#ffffff;
     opacity:2;
+    background:transparent;
 }
