@@ -25,4 +25,8 @@ a-scene {
 }
 .text{
     color:#f81111;
+    width:200px;
+    height:80px;
+    border:1px solid black;
+    border-radius: 5px;
 }
