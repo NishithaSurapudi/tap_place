@@ -22,6 +22,7 @@ AFRAME.registerComponent('tap-place', {
                     newElement.setAttribute('visible', 'true')
                 });
             }
+            CatapultModel = newElement;
         })
     }
 });
