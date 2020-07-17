@@ -1,4 +1,6 @@
 var isplaced = false;
+var Myanalytics = firebase.analytics();
+
 //the component for placing the 3d model
 AFRAME.registerComponent('tap-place', {
     init: function () {
@@ -21,12 +23,11 @@ AFRAME.registerComponent('tap-place', {
                 newElement.addEventListener('model-loaded', () => {
                     newElement.setAttribute('visible', 'true')
                 });
+                Myanalytics.logEvent('model_placed', console.log('user tapped to place the model'));
             }
-            CatapultModel = newElement;
         })
     }
 });
-
 
 $(function () {
     $("#ground").click(function () {
